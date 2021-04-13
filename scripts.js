@@ -1,17 +1,27 @@
-/* INTERACTING */
+/* MADISON WILLIAMS */
 
-// Make items draggable by specifying a selector, for example
-// draggable('.drag')
 
-/* Open */
-function openNav() {
-  document.getElementById("mymenu").style.height = "100%";
+
+
+
+/* NAVIGATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+function toggleNav() {
+	if (document.querySelector('.mw') && document.querySelector('.closebtn')) {
+		let opn = document.querySelector('.mw')
+		let cls = document.querySelector('.closebtn')
+		let bdy = document.querySelector('body')
+		opn.addEventListener('click', function() {
+			bdy.classList.add('nav-active')
+		})
+		cls.addEventListener('click', function() {
+			bdy.classList.remove('nav-active')
+		})
+	}
 }
 
-/* Close */
-function closeNav() {
-  document.getElementById("mymenu").style.height = "0%";
-}
+toggleNav()
 
 
 
