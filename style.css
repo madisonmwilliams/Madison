@@ -218,6 +218,7 @@ nav a {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(12, 1fr);
+	border-image: none;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
